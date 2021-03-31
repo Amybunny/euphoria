@@ -1,0 +1,21 @@
+.custom-logo{
+  display: block;
+  margin: 24px auto;
+}
+
+.pc-menu{
+  display: none;
+}
+.sp-menu{
+  display: flex;
+  justify-content: flex-end;
+}
+
+@include media(pc){
+  .sp-menu{
+    display: none;
+  }
+  .pc-menu{
+    display: block;
+  }
+}
