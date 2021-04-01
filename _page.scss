@@ -1,0 +1,82 @@
+.page-title{
+  font-size: 22px;
+  font-weight: 500;
+  height:80px;
+  line-height: 80px;
+}
+.single-title{
+  font-size: 22px;
+  font-weight: 500;
+  width: 90%;
+  margin: 32px auto 0 auto;
+  color:$whiteText;
+}
+.single-info{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.single-date{
+  font-size: 12px;
+  margin-right: 8px;
+  color:$darkGlay;
+}
+.single-category{
+  font-size: 12px;
+  width: 44px;
+  height: 18px;
+  line-height: 18px;
+  color:$whiteText;
+  background: $lightGlay;
+}
+.main{
+  width: 90%;
+  margin: 0 auto;
+  color:$whiteText;
+  h1{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 32px 0;
+  }
+  p{
+    font-size: 14px;
+  }
+  a{
+    text-decoration: underline;
+    color:#135e96;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+.wp-block-image{
+  margin-top: 16px;
+}
+.wp-block-quote{
+  border:1px solid $orange;
+  border-radius: 10px;
+  padding: 8px;
+  background: $yellow;
+  color:$yellowText;
+  margin: 16px;
+}
+.singular-pagination{
+  width: 90%;
+  margin: 24px auto;
+  overflow: hidden;
+}
+.prev-post,.next-post{
+  display: flex;
+  img{
+    width: 100px;
+  }
+  h4{
+    font-size: 12px;
+    color:$whiteText;
+    line-height: 56.17px;
+    padding: 0px 8px;
+  }
+}
+.next-post{
+  float: right;
+}
