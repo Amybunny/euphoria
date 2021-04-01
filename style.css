@@ -460,6 +460,17 @@ template {
   display: none;
 }
 
+.contact-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 32px auto 24px auto;
+}
+
+.line-btn img {
+  display: block;
+  margin: 24px auto 32px auto;
+}
+
 .footer {
   color: #403c2b;
   background-color: #fff7d5;
@@ -477,6 +488,9 @@ template {
 }
 .footer-menu li {
   padding-bottom: 14px;
+}
+.footer-menu li a:hover {
+  cursor: pointer;
 }
 
 .footer-logo {
@@ -511,10 +525,17 @@ template {
   width: 100%;
 }
 
+.wrap {
+  padding: 1px 0;
+}
+
+.pb32 {
+  padding-bottom: 32px;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
-  color: #707070;
   font-size: 14px;
 }
 .container img {
@@ -526,10 +547,16 @@ template {
 .front-title {
   font-size: 20px;
   font-weight: 500;
+  margin: 32px auto;
+}
+
+.fw6 {
+  font-weight: 600;
 }
 
 .more-btn {
   display: block;
+  font-size: 15px;
   width: 200px;
   height: 50px;
   margin: 32px auto;
@@ -540,9 +567,24 @@ template {
   cursor: pointer;
 }
 
-.more-btn-yellow {
-  background-color: #fff7d5;
-  color: #403c2b;
+.qa-box {
+  padding: 16px 8px;
+  border-top: 1px solid #f8b500;
+}
+
+.question {
+  margin-bottom: 8px;
+}
+
+.remote-link {
+  text-decoration: underline;
+}
+
+.voice {
+  border: 1px solid #f8b500;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 16px;
 }
 
 body {
@@ -557,12 +599,18 @@ body {
   text-align: center;
 }
 
-.front-title {
-  margin: 32px auto;
+.rectangle-border {
+  border-radius: 4px;
 }
 
-.rectangleBorder {
-  border-radius: 4px;
+.back-white {
+  background-color: #ffffff;
+  color: #707070;
+}
+
+.back-yellow {
+  background: #fff7d5;
+  color: #403c2b;
 }
 
 .entry-card {
