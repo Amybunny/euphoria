@@ -511,6 +511,18 @@ template {
   width: 100%;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  color: #707070;
+  font-size: 14px;
+}
+.container img {
+  display: block;
+  width: 60%;
+  margin: 16px auto 0 auto;
+}
+
 .front-title {
   font-size: 20px;
   font-weight: 500;
@@ -531,6 +543,10 @@ template {
 .more-btn-yellow {
   background-color: #fff7d5;
   color: #403c2b;
+}
+
+body {
+  line-height: 1.5;
 }
 
 .screen-reader-text {

@@ -23,6 +23,9 @@ $pc:600px;
 @import "header";
 @import "frontpage";
 
+body{
+  line-height: 1.5;
+}
 .screen-reader-text{
   display: none;
 }

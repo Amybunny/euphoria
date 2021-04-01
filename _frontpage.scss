@@ -2,6 +2,18 @@
   width: 100%;
 }
 
+.container{
+  width: 90%;
+  margin: 0 auto;
+  color:$whiteText;
+  font-size: 14px;
+  img{
+    display: block;
+    width: 60%;
+    margin: 16px auto 0 auto;
+  }
+}
+
 .front-title{
   font-size:20px;
   font-weight:500;
