@@ -9,6 +9,7 @@ function sampletheme_setup(){
   register_nav_menus(
     [
     'menu-1'=>'メイン',
+    'menu-2'=>'メイン2',
     'menu-2'=>'フッター',
     ]
   );

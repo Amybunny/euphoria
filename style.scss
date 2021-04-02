@@ -8,7 +8,7 @@ $linkTitle:#262626;
 $yellowText:#403c2b;
 $whiteText:#707070;
 
-$pc:600px;
+$pc:684px;
 
 @mixin media($media-width){
   @if $media-width == pc {
@@ -63,6 +63,9 @@ input:focus::placeholder {
   box-shadow: 0 0.5px 5px 0 rgba(0,0,0, 0.2);
   display: flex;
   padding: 8px;
+}
+.entry-card-title{
+  color:$whiteText;
 }
 .entry-img{
   display: block;
@@ -148,4 +151,18 @@ input:focus::placeholder {
 .current{
   background:#bbb;
   color:$white;
+}
+
+@include media(pc){
+  .container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contents{
+    flex:2;
+  }
+  .widget{
+    flex:1;
+  }
 }

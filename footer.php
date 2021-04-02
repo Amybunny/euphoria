@@ -13,7 +13,7 @@
         wp_nav_menu(
           [
             'theme_location' => 'menu-2',
-            'menu_class'=>'footer-menu',
+            'menu_class'=>'menu-common footer-menu',
           ]
           );
         ?>
@@ -27,6 +27,24 @@
     // jQuery(function(){
     //   alert("test");
     // })
+    'use strict';
+    {
+      const open = document.getElementById('open');
+      const close = document.getElementById('close');
+      const overlay = document.querySelector('.overlay');
+      console.log(open);
+      console.log(close);
+      console.log(overlay);
+      open.addEventListener('click',()=>{
+        overlay.classList.add('show');
+        open.classList.add('hide');
+      });
+
+      close.addEventListener('click',()=>{
+        overlay.classList.remove('show');
+        open.classList.remove('hide');
+      });
+    }
   </script>
 </body>
 </html>

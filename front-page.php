@@ -2,7 +2,7 @@
 <img class="top-img" src="/wordpress/wp-content/themes/ayaka/youDSC_0057のコピー.jpg" alt="">
 
 <section class="wrap back-white">
-  <div class="container">
+  <div class="front-container">
     <h1 class="text-center front-title">レイキは日本発祥の<br>「手当て療法」です！
     </h1>
 
@@ -37,7 +37,7 @@
 </section>
 
 <section class="wrap back-yellow">
-  <div class="container">
+  <div class="front-container">
     <h1 class="text-center front-title">プロフィール</h1>
     <img src="/wordpress/wp-content/themes/ayaka/profile.jpg" alt="">
     <p class="text-center">レイキヒーラー</p>
@@ -92,7 +92,7 @@
 </section>
 
 <section class="wrap back-yellow">
-  <div class="container">  
+  <div class="front-container">  
     <h1 class="text-center front-title">アクセスガイド</h1>
     <p>当院は、決まった店舗はございません。<br>
     ・福岡市中心部のレンタルサロン<br>
@@ -108,7 +108,7 @@
 </section>
 
 <section class="wrap back-white">
-  <div class="container">
+  <div class="front-container">
     <h1 class="text-center front-title">よくある質問</h1>
     <div class="qa-box">
       <h2 class="question fw6">Q .ヒーリングを受けている間はどうすればいいのですか？</h2>
@@ -134,7 +134,7 @@
 </section>
 
 <section class="wrap back-yellow pb32">
-  <div class="container">  
+  <div class="front-container">  
     <h1 class="text-center front-title">料金一覧</h1>
     <p>・5000円<br>
     ・初回限定4000円<br>
@@ -148,7 +148,7 @@
 </section>
 
 <section class="wrap back-white">
-  <div class="container">
+  <div class="front-container">
     <h1 class="text-center front-title">お客様の声</h1>
     <p class="voice back-yellow">とても良かったです。ヒーリング中の体感も強かったですが翌日のスッキリ感がとてもありました♪またよろしくお願い致します。</p>
     <p class="voice back-yellow ">月1,2回猫ちゃんにレイキを送ってもらってます。調子悪いなって時にお願いして、30分から半日くらいで良くなるのでいつも助かってます。</p>
