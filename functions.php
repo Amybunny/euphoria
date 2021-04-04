@@ -84,8 +84,6 @@ function breadcrumb(){
 		
 		if(is_search()){
 			$str.='<li>「'. get_search_query() .'」で検索した結果</li>';
-		} elseif(is_tag()){
-			$str.='<li>タグ : '. single_tag_title( '' , false ). '</li>';
 		} elseif(is_404()){
 			$str.='<li>404 Not found</li>';
 		} elseif(is_date()){
@@ -112,8 +110,6 @@ function breadcrumb(){
 				}
 			}
 			$str.='<li>'. $cat -> name . '</li>';
-		} elseif(is_author()){
-			$str .='<li>投稿者 : '. get_the_author_meta('display_name', get_query_var('author')).'</li>';
 		} elseif(is_page()){
 			if($post -> post_parent != 0 ){
 				$ancestors = array_reverse(get_post_ancestors( $post->ID ));
@@ -124,12 +120,6 @@ function breadcrumb(){
 			}
 			$str.= '<li>'. $post -> post_title .'</li>';
 			
-		} elseif(is_attachment()){
-			if($post -> post_parent != 0 ){
-				$str.= '<li><a href="'. get_permalink($post -> post_parent).'">'. get_the_title($post -> post_parent) .'</a></li>';
-				$str.='<li>&gt;</li>';
-			}
-			$str.= '<li>' . $post -> post_title . '</li>';
 		} elseif(is_single()){
 			$categories = get_the_category($post->ID);
 			$cat = $categories[0];
@@ -142,7 +132,7 @@ function breadcrumb(){
 			}
 			$str.='<li><a href="'. get_category_link($cat -> term_id). '">'. $cat-> cat_name . '</a></li>';
 			$str.='<li>&gt;</li>';
-			$str.= '<li>'. $post -> post_title .'</li>';
+			// $str.= '<li>'. $post -> post_title .'</li>';
 		} else{
 			$str.='<li>'. wp_title('', false) .'</li>';
 		}

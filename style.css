@@ -502,6 +502,11 @@ template {
   display: block;
   margin: 80px auto 24px auto;
 }
+@media screen and (min-width: 684px) {
+  .custom-logo {
+    margin: 24px auto;
+  }
+}
 
 .pc-menu {
   display: none;
@@ -681,7 +686,7 @@ template {
 }
 @media screen and (min-width: 684px) {
   .single-title {
-    width: 100%;
+    margin: 32px 0 0 0;
   }
 }
 
@@ -724,6 +729,11 @@ template {
 .main p {
   font-size: 14px;
 }
+@media screen and (min-width: 684px) {
+  .main p {
+    font-size: 16px;
+  }
+}
 .main a {
   text-decoration: underline;
   color: #135e96;
@@ -734,7 +744,7 @@ template {
 
 @media screen and (min-width: 684px) {
   .singular-main {
-    width: 100%;
+    margin: 0;
   }
 }
 
@@ -758,7 +768,7 @@ template {
 }
 @media screen and (min-width: 684px) {
   .singular-pagination {
-    width: 100%;
+    margin: 24px 0 0 0;
   }
 }
 
