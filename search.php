@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <h1 class="page-title text-center back-yellow">検索結果</h1>
+<?php breadcrumb(); ?>
 <div class="container">
   <section class="contents">
     <p class="text-center back-white mt24">「<?php the_search_query();?>」を含む記事</p>

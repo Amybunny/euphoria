@@ -10,37 +10,33 @@
 </head>
 <body <?php body_class(); ?> >
 <?php wp_body_open(); ?>
-<div>
-  <header>
-    <div>
-      <div class="sp-menu">
-        <img class="sp-menu-btn phone" src="/wordpress/wp-content/themes/ayaka/phone.png" alt="">
-        <img class="sp-menu-btn hamburger" id="open" src="/wordpress/wp-content/themes/ayaka/menu.png" alt="">
-      </div>
-      <div><?php the_custom_logo(); ?></div>
-      <?php if(has_nav_menu('menu-1')): ?>
-        <nav class="pc-menu" aria-label="トップメニュー">
-          <?php 
-          wp_nav_menu(
-            [
-              'theme_location' => 'menu-1',
-              'menu_class'=>'menu-common main-menu',
-            ]
-            );
-          ?>
-        </nav>
-        <nav class="overlay " aria-label="トップメニュー">
-          <span id="close"><i class="fas fa-times"></i></span>
-          <?php 
-          wp_nav_menu(
-            [
-              'theme_location' => 'menu-1',
-              'menu_class'=>'main-menu',
-            ]
-            );
-          ?>
-        </nav>
-      <?php endif; ?>
-    </div>
-  </header>
-  <div>
+  <div class="sp-menu">
+    <img class="sp-menu-btn phone"  src="/wordpress/wp-content/themes/ayaka/phone.png" alt="">
+    <img class="sp-menu-btn open" id="open" src="/wordpress/wp-content/themes/ayaka/menu.png" alt="">
+  </div>
+<header>
+  <div><?php the_custom_logo(); ?></div>
+  <?php if(has_nav_menu('menu-1')): ?>
+    <nav class="pc-menu" aria-label="トップメニュー">
+      <?php 
+      wp_nav_menu(
+        [
+          'theme_location' => 'menu-1',
+          'menu_class'=>'menu-common main-menu',
+        ]
+        );
+      ?>
+    </nav>
+    <nav class="overlay " aria-label="トップメニュー">
+      <div id="close"><i class="fas fa-times"></i></div>
+      <?php 
+      wp_nav_menu(
+        [
+          'theme_location' => 'menu-1',
+          'menu_class'=>'main-menu',
+        ]
+        );
+      ?>
+    </nav>
+  <?php endif; ?>
+</header>

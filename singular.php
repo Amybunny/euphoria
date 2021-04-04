@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <h1 class="text-center back-yellow page-title">ブログ</h1>
+<?php breadcrumb(); ?>
 <div class="container">
   <section class="contents">
     <?php while(have_posts()): the_post(); ?>
@@ -8,7 +9,7 @@
         <p class="single-date"><?php the_time('Y.n.j'); ?></p> 
         <p class="single-category rectangle-border text-center"><?php the_category(',') ?></p>
       </div>
-      <div class="main">
+      <div class="main singular-main">
         <?php the_content() ?>
       </div>
     <?php endwhile; ?>

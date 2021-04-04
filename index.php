@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 <h1 class="page-title text-center back-yellow">ブログ記事一覧</h1>
+<div>
+	<ul class="breadcrumb">
+		<li><a href="'. home_url() .'/">ホーム</a></li>
+		<li>&gt;</li>
+		<li>ブログ記事一覧</li>
+	</ul>
+</div>
 <div class="container">
 	<section class="contents">
 		<ul>

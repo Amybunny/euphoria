@@ -500,7 +500,7 @@ template {
 
 .custom-logo {
   display: block;
-  margin: 24px auto;
+  margin: 80px auto 24px auto;
 }
 
 .pc-menu {
@@ -508,14 +508,21 @@ template {
 }
 
 .sp-menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 18px;
   display: flex;
   justify-content: flex-end;
+  width: 90%;
+  margin: 16px auto;
 }
 .sp-menu #open {
   cursor: pointer;
 }
-.sp-menu #open.hide {
-  display: none;
+
+.open {
+  margin-left: 10px;
 }
 
 .overlay {
@@ -538,8 +545,8 @@ template {
 }
 .overlay #close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 14px;
+  right: 28px;
   font-size: 32px;
   cursor: pointer;
   color: #707070;
@@ -672,11 +679,21 @@ template {
   margin: 32px auto 0 auto;
   color: #707070;
 }
+@media screen and (min-width: 684px) {
+  .single-title {
+    width: 100%;
+  }
+}
 
 .single-info {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
   display: flex;
+}
+@media screen and (min-width: 684px) {
+  .single-info {
+    width: 100%;
+  }
 }
 
 .single-date {
@@ -687,11 +704,11 @@ template {
 
 .single-category {
   font-size: 12px;
-  width: 44px;
   height: 18px;
   line-height: 18px;
   color: #707070;
   background: #dee0e0;
+  padding: 0 4px;
 }
 
 .main {
@@ -715,6 +732,12 @@ template {
   cursor: pointer;
 }
 
+@media screen and (min-width: 684px) {
+  .singular-main {
+    width: 100%;
+  }
+}
+
 .wp-block-image {
   margin-top: 16px;
 }
@@ -732,6 +755,11 @@ template {
   width: 90%;
   margin: 24px auto;
   overflow: hidden;
+}
+@media screen and (min-width: 684px) {
+  .singular-pagination {
+    width: 100%;
+  }
 }
 
 .prev-post, .next-post {
@@ -898,6 +926,17 @@ input:focus::placeholder {
 .current {
   background: #bbb;
   color: #ffffff;
+}
+
+.breadcrumb {
+  display: flex;
+  color: #707070;
+  font-size: 12px;
+  width: 90%;
+  margin: 8px auto;
+}
+.breadcrumb li {
+  padding-right: 4px;
 }
 
 @media screen and (min-width: 684px) {

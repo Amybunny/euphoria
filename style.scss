@@ -153,6 +153,17 @@ input:focus::placeholder {
   color:$white;
 }
 
+.breadcrumb{
+  display: flex;
+  color:$whiteText;
+  font-size: 12px;
+  width: 90%;
+  margin: 8px auto;
+  li{
+    padding-right: 4px;
+  }
+}
+
 @include media(pc){
   .container{
     display: flex;

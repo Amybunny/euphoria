@@ -10,11 +10,17 @@
   width: 90%;
   margin: 32px auto 0 auto;
   color:$whiteText;
+  @include media(pc){
+    width: 100%;
+  }
 }
 .single-info{
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
   display: flex;
+  @include media(pc){
+    width: 100%;
+  }
 }
 .single-date{
   font-size: 12px;
@@ -23,11 +29,11 @@
 }
 .single-category{
   font-size: 12px;
-  width: 44px;
   height: 18px;
   line-height: 18px;
   color:$whiteText;
   background: $lightGlay;
+  padding:0 4px;
 }
 .main{
   width: 90%;
@@ -49,6 +55,11 @@
     }
   }
 }
+.singular-main{
+  @include media(pc){
+    width: 100%;
+  }
+}
 .wp-block-image{
   margin-top: 16px;
 }
@@ -64,6 +75,9 @@
   width: 90%;
   margin: 24px auto;
   overflow: hidden;
+  @include media(pc){
+    width: 100%;
+  }
 }
 .prev-post,.next-post{
   display: flex;

@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <h1 class="page-title text-center back-yellow"><?php the_archive_title() ?></h1>
+<?php breadcrumb(); ?>
 <div class="container">
   <section class="contents">
     <ul>
